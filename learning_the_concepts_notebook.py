@@ -12,7 +12,7 @@ Inputs		Target
 [1,1]		1
 """
 
-# Defining example input vector and weights (for vegetables on a sunny day)
+# Defining example input vector and weights
 input_vector = [0, 0.5] # warm weather, vegetables
 weights = [1,3] # food is 3x more important than weather
 
