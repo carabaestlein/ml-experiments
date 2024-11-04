@@ -2,15 +2,15 @@
 # Inputs: weather (warm = 0, cold = 1) and food pairing (seafood = 0, vegetables = 0.5, meat = 1)]
 # Outputs: red wine = 1, white wine = 0
 
-"""
-Inputs		Target
-[0,0]		0 
-[0,0.5]		0
-[0,1]		1
-[1,0]		0
-[1,0.5]		1
-[1,1]		1
-"""
+
+# Inputs	Target
+# [0,0]		0 
+# [0,0.5]	0
+# [0,1]		1
+# [1,0]		0
+# [1,0.5]	1
+# [1,1]		1
+
 
 # Defining example input vector and weights
 input_vector = [0, 0.5] # warm weather, vegetables
