@@ -13,7 +13,7 @@ Learning how neural networks work by building a simple manual one to recommend w
 | [warm, seafood]    | [0, 0]        | [white]       | [0]                   |
 | [warm, vegetables] | [0, 0.5]      | [white]       | [0]                   |
 | [warm, meat]       | [0, 1]        | [red]         | [1]                   |
-| [cold, seafood]    | [0, 0]        | [white]       | [0]                   |
-| [cold, vegetables] | [0, 0.5]      | [red]         | [1]                   |
-| [cold, meat]       | [0, 1]        | [red]         | [1]                   |
+| [cold, seafood]    | [1, 0]        | [white]       | [0]                   |
+| [cold, vegetables] | [1, 0.5]      | [red]         | [1]                   |
+| [cold, meat]       | [1, 1]        | [red]         | [1]                   |
 
