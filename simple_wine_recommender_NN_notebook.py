@@ -3,21 +3,31 @@ import numpy as np
 import matplotlib.pyplot as plt
 from two_layer_NN import NeuralNetwork
 
-# Define input vectors, targets and learning rate
-input_vectors = np.array(
-   [
-       [0, 0],
-       [0, 0.5],
-       [0, 1],
-       [1, 0],
-       [1, 0.5],
-       [1, 1],
-   ]
-)
-targets = np.array([0, 0, 1, 0, 1, 1])
-learning_rate = 0.1
+# Define raw input vectors and output targets data
+input_vectors_raw = [
+    ['warm', 'seafood'],
+    ['warm', 'vegetables'],
+    ['warm', 'meat'],
+    ['cold', 'seafood'],
+    ['cold', 'vegetables'],
+    ['cold', 'meat']
+]
+targets_raw = ['white', 'white', 'red', 'white', 'red', 'red']
+
+# Map raw data to encoded data
+input_mapping = {'warm': 0, 'cold': 1, 'seafood': 0, 'vegetables': 0.5, 'meat': 1}
+targets_mapping = {'white': 0, 'red': 1}
+input_vectors = np.array([[input_mapping[item[0]], input_mapping[item[1]]] for item in input_vectors_raw])
+targets = np.array([targets_mapping[color] for color in targets_raw])
+
+# Verify encoded input vectors and output targets
+print(f"Input vectors: {input_vectors}")
+# Input vectors: [[0.  0. ] [0.  0.5] [0.  1. ] [1.  0. ] [1.  0.5] [1.  1. ]]
+print(f"Output targets: {targets}")
+# Output targets: [0 0 1 0 1 1]
 
 # Initialise and train NN
+learning_rate = 0.1
 neural_network = NeuralNetwork(learning_rate)
 training_error = neural_network.train(input_vectors, targets, 10000)
 
