@@ -11,9 +11,9 @@ Learning how neural networks work by building a simple manual one to recommend w
 | Input              | Encoded input | Target output | Encoded target output |
 | ------------------ | ------------- | ------------  | --------------------- |
 | [warm, seafood]    | [0, 0]        | [white]       | [0]                   |
-| [warm, vegetables] | [0, 0]        | [white]       | [0]                   |
-| [warm, meat]       | [0, 0]        | [red]         | [1]                   |
+| [warm, vegetables] | [0, 0.5]      | [white]       | [0]                   |
+| [warm, meat]       | [0, 1]        | [red]         | [1]                   |
 | [cold, seafood]    | [0, 0]        | [white]       | [0]                   |
-| [cold, vegetables] | [0, 0]        | [red]         | [1]                   |
-| [cold, meat]       | [0, 0]        | [red]         | [1]                   |
+| [cold, vegetables] | [0, 0.5]      | [red]         | [1]                   |
+| [cold, meat]       | [0, 1]        | [red]         | [1]                   |
 
