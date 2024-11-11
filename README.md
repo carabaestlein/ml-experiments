@@ -4,7 +4,7 @@ Learning how neural networks work by building a simple manual one to recommend w
 
 `learning_the_concepts_notebook.py` walks through computing dot products, creating the different layers of a NN, making predictions, computing errors and then adjusting the model parameters via backpropagation.
 
-`two_layer_NN.py` contains the code for a simple two layer NN, including the code to train it over many iterations. Note that if the training data is small this may lead to overfitting.
+`two_layer_NN.py` contains the code for a simple two layer NN, including the code to train it over many iterations. Note that given the training data is small this model will be heavily overfitted.
 
 `simple_wine_recommender_NN_notebook.py` contains the code to train the two layer NN on the following data set:
 
@@ -17,3 +17,4 @@ Learning how neural networks work by building a simple manual one to recommend w
 | [cold, vegetables] | [1, 0.5]      | [red]         | [1]                   |
 | [cold, meat]       | [1, 1]        | [red]         | [1]                   |
 
+`simple_wine_recommender.py` accepts an input vector, such as ['cold', 'meat'], and outputs a wine recommendation 'wine' or 'red'.

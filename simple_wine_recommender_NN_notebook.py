@@ -43,7 +43,9 @@ print(f"Model weights: {neural_network.weights}")
 print(f"Model bias: {neural_network.bias}")
 # Model bias: -5.695445789768399
 
-# Make a prediction
+# Make a couple of predictions
 input_vector = [0, 0.5] # warm weather, vegetables
 prediction = neural_network.predict(input_vector)
 print(f"Prediction: {prediction}") # this is < 0.5, therefore = white wine, which is correct
+input_vector = [1, 1] # cold weather, meat
+prediction = neural_network.predict(input_vector) # this is > 0.5, therefore = red wine, which is correct
