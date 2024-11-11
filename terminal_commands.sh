@@ -5,7 +5,7 @@ source wine_recs_venv/bin/activate
 # install dependencies
 python3 -m pip install ipython numpy matplotlib # first time only
 
-# start IPython console
+# start IPython console for running notebooks
 ipython
 
 # exits IPython
